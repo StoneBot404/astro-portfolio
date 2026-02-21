@@ -12,11 +12,24 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
-├── public/
+├── public/               # Static assets (images, fonts, favicon)
+│   ├── assets/          # Images for blog posts
+│   └── fonts/           # Web fonts
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── assets/          # Icons and images used in components
+│   ├── components/      # Reusable UI components
+│   │   └── ui/          # React components
+│   ├── content/         # Content collections
+│   │   └── blog/        # Blog posts in Markdown format (organized by year)
+│   ├── layouts/         # Page layouts and templates
+│   ├── pages/           # Routes and pages
+│   ├── styles/          # Global styles and CSS
+│   └── utils/           # Utility functions
+├── astro.config.mjs     # Astro configuration
+├── vercel.json          # Vercel deployment and CSP configuration
+├── package.json         # Project dependencies and scripts
+├── tailwind.config.mjs  # Tailwind CSS configuration
+└── LICENSE              # Dual license (CC BY 4.0 + MIT)
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
@@ -41,3 +54,10 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Github Commands
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/StoneBot404/astro-portfolio.git
+git push -u origin main
